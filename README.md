@@ -18,7 +18,7 @@ To integrate `XMediatorMoloco` into your Xcode project using Swift Package Manag
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/x3mads/xmediator-moloco-swift-package", exact: "4.10.000")
+    .package(url: "https://github.com/x3mads/xmediator-moloco-swift-package", exact: "4.11.100")
 ]
 ```
 

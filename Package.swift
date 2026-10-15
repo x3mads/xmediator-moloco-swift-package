@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "XMediatorMoloco", targets: ["XMediatorMolocoTarget"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/moloco/moloco-sdk-ios-spm.git", exact: "4.10.0"),
+        .package(url: "https://github.com/moloco/moloco-sdk-ios-spm.git", exact: "4.11.1"),
         .package(url: "https://github.com/x3mads/xmediator-swift-package.git", .upToNextMajor(from: "1.145.0")),
     ],
     targets: [
@@ -20,14 +20,12 @@ let package = Package(
                 .product(name: "MolocoSDK", package: "moloco-sdk-ios-spm"),
             ],
             path: "XMediatorMolocoTarget",
-            linkerSettings: [
-                .linkedFramework("AdSupport"),
-            ]
+            linkerSettings: []
         ),
         .binaryTarget(
             name: "XMediatorMoloco",
-            url: "https://ios-artifact-registry.x3mads.com/cocoapods/XMediatorMoloco/XMediatorMoloco-4.10.0.0.zip",
-            checksum: "3ba84df47a2d1875c646b927cc56d809fac2835a1746b5b77b53212d602c7f48"
+            url: "https://ios-artifact-registry.x3mads.com/cocoapods/XMediatorMoloco/XMediatorMoloco-4.11.1.0.zip",
+            checksum: "c0254e157b3b74bb0bf31f3c9c2df3a3a5ad3cf0abcd9a4ceed7d51a308e2c9d"
         ),
     ]
 )
